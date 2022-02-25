@@ -26,6 +26,7 @@ module.exports.getRoomById = async function (id) {
     return { status: 500, result: err };
   }
 }
+var beats = { rock: 'scissors', scissors: 'paper', paper: 'rock' };
 module.exports.play = async function (id, value) {
   try {
     if (!beats[value]) {
